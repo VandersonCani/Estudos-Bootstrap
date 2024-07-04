@@ -1,3 +1,32 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #f39c12;
+    border-color: #e67e22;
+}
+
+.btn-primary:hover {
+    background-color: #e67e22;
+    border-color: #d35400;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
 .topnav {
     width: 98%;
     border-radius: 8px;
@@ -105,7 +134,7 @@ a:visited {
 }
 
 /*------------ Tabela ------------------*/
-.tabelaProdutos {
+.tabela {
     margin: 40px auto;
     text-align: center;
 }
@@ -177,7 +206,7 @@ form .input-single .input:valid~label {
 }
 
 .btn {
-    width: 100%;
+    width: auto;
     text-align: center;
     background-color: rgb(66, 173, 66);
     color: white;
