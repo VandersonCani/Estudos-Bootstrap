@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cani Vidros</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    </head>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+        <!-- Nome -->
+        <a class="navbar-brand" href="#">Cani Vidros</a>
+        <!-- Botão de toggle para a navbar em dispositivos móveis -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Links da navbar -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="produtos.html">Produtos e Serviços</a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="orcamento.html">Faça Seu Orçamento</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="sobre.html">Sobre a Empresa</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <body>
+
+        <section class="form-container, mx-auto">
+            <div class="container">
+                <form name="frmInscrevase" method="post" action="#" onsubmit="return validaInscrevase()">
+                    <fieldset class="border p-3 mb-3, inscrevase">
+                        <h1>Inscreva-se para receber noticias de Qualquer Coisa</h1>
+
+                        <legend class="w-auto">Informações Pessoais</legend>
+
+                        <div class="input-single">
+                            <input type="text" name="txtnome" id="nome-box" class="input" autocomplete="off">
+                            <label for="email-box">Nome (Ex: João da Silva)</label>
+                        </div>
+
+                        <div class="input-single">
+                            <input type="email" name="txtemail" id="email-box" class="input" autocomplete="off">
+                            <label for="email-box">Email (Ex:João.silva@gmail.com)</label>
+                        </div>
+
+                        <div class="input-single">
+                            <input type="password" name="" id="senha-box" class="input" autocomplete="off">
+                            <label for="senha-box">Senha (Ex: Abcd@1234)</label>
+                        </div>
+                        <div class="text-center">
+                            <button type="reset" class="btn btn-dark"
+                                onclick="verificaMotivo(null)">Limpar</button><button type="submit"
+                                class="btn btn-dark ml-5">Enviar</button>
+                        </div>
+
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </body>
+
+    <!-- Rodapé -->
+    <footer class="text-center bg-info navbar-fixed-bottom">
+        <div class="container">
+            <!-- Ícones das Redes Sociais -->
+            <div class="footer-icons">
+                <a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="bi bi-twitter"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a>
+            </div>
+            <p class="mt-3">&copy; 2024 Minha Empresa. Todos os direitos reservados.</p>
+            <!-- Ícone de Voltar ao Topo -->
+            <div class="back-to-top" onclick="scrollToTop()">
+                <i class="bi bi-arrow-up-circle"></i>
+            </div>
+        </div>
+    </footer>
+</html>

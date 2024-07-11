@@ -1,0 +1,27 @@
+{
+  "--add-opens=java.base/java.lang=null"
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Attach to Chrome",
+      "port": 9222,
+      "request": "attach",
+      "type": "chrome",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "name": "Java",
+      "type": "java",
+      "request": "launch",
+      "stopOnEntry": false,
+      "preLaunchTask": "build",
+      "jdkPath": "${env:JAVA_HOME}/bin",
+      "cwd": "${fileDirname}",
+      "startupClass": "${fileBasename}",
+      "classpath": [],
+      "sourcePath": [],
+      "options": [],
+      "args": []
+    }
+  ]
+}
